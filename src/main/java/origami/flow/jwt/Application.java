@@ -1,13 +1,13 @@
-package jwt.api;
+package origami.flow.jwt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Main {
+public class Application {
 
-    public static void main(String[] args) {
-        SpringApplication.run(Main.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
 
 }
