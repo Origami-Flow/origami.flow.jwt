@@ -1,0 +1,16 @@
+services:
+  origami-db:
+    image: davifeitosa0/origami-flow-bd:latest
+    container_name: origami-db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    restart: unless-stopped
+
+  origami-flow-jwt:
+    image: davifeitosa0/origami-flow-jwt:latest
+    container_name: origami-flow-jwt
+    ports:
+      - "8081:8081"
+    restart: unless-stopped
